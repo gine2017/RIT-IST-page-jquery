@@ -1,0 +1,309 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+#webTitle{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.typing{
+    display: flex;
+    /*background-image: url('../images/programmingCandid.JPG');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    justify-content: center;
+    align-items: center;
+}
+.typing p, #wmcTitle,#hccTitle,#citTitle{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 300;
+    text-align: center;
+}
+.typing p {
+    background-color: #F76902;
+    padding: 1rem;
+}
+.undergraduateMajors{
+    display: flex;
+}
+.undergraduateMajors > div{
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    text-align: center;
+}
+#wmcTitle,#hccTitle,#citTitle{
+    margin: 1rem;
+}
+.overview{
+    display: flex;
+    flex-wrap: wrap;
+}
+#overviewTitle{
+    font-weight: 400;
+}
+#overviewDesc{
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 1.25rem;
+}
+.majors, .gradMajors{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 75vw;
+}
+.ui-accordion .ui-accordion-content{
+    line-height: 1.75rem;
+    padding: 1rem;
+    height: 6.25rem;
+}
+.ui-accordion .ui-accordion-header{
+    font-size: 1.5rem;
+    color: black;
+}
+.ui-state-active,.ui-state-default{
+    border: none;
+    background: none;
+}
+.ui-accordion .ui-accordion-header:hover {
+    background-color: #F76902;
+    color: white;
+}
+#accordion,#gradAccordion{
+    margin-bottom: 2rem;
+}
+#programTitle{
+    color: black;
+}
+#gradTitle{
+    margin-top: 4rem;
+    color: #F76902;
+
+}
+#headMinorTitle{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+#minorTitle{
+    color: #F76902; 
+}
+.seperateBar{
+    width: 70vw;
+    height: 1px;
+    background-color: #F76902;
+    margin-top: 1rem;
+    position: absolute;
+    left: 10%;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #F76902;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: baseline;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#salaryNum,#rankNum,#jobNum{
+    font-size: 2.5rem;
+}
+#salaryDesc,#rankDesc,#jobDesc{
+    font-size: 1.20rem;
+    color: black;
+    width: 14.25rem;
+}
+.careers{
+    display: flex;
+    background-color: #ECECEC;
+    padding: 1rem;
+}
+#careerTitle{
+    color:#F76902
+}
+#leftCareer > img{
+   width: 37.25rem; 
+   height:25rem ;
+}
+#leftCareer, #rightCareer{
+    text-align: center;
+}
+ #rightCareer{
+    width: 100%;
+}
+
+#careersItems {
+    font-size: 1.25rem;
+    line-height: 3.1rem;
+    color: black;
+}
+.employment{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+    justify-content: center;   
+    color:#F76902;
+    background-color: #ECECEC;
+}
+.employment p {
+    color: black;
+}
+.employment h2 h1{
+    font-weight: 100;
+}
+.programTitle{
+    text-align: center;
+}
+.majors h1 {
+    color:#F76902;
+}
+
+#programTitle{
+    text-align: center;
+}
+#minorAccordion{
+    margin-bottom: 4rem;
+}
+.mapDiv{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#employDesc,#coopDesc,#employersPara{
+    font-weight: 100;
+}
+
+iframe{
+    width: 100vw;
+    height: 75vh;
+    border: none;
+    position: relative;
+    left: 10%;
+}
+.faculty{
+    display: block;
+    width: 100vw;
+    height: 110vh;
+    background-color: #ECECEC;
+    text-align: center;
+}
+.fg-caption{
+    width: auto;
+    left: 20%;
+
+}
+.gallery{
+    margin-top: 8%;
+    margin-left:30%;
+    height: 31.25rem;
+    justify-content: center;
+    background-color: #ECECEC;
+}
+.facultyRescources{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.facultyRescources > div{
+    flex: 25%;
+    height: 9.4rem;
+    background-color: #F76902;
+    margin: 2rem;
+    text-align: center;
+    transition: transform .2s;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facultyRescources > .modalBox:hover{
+    transform: scale(1.25);  
+}
+.facultyRescources .modal, .facultyLookup 
+.modalLookup, .studyAbroad,
+.tutorInfoBox{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .facultyRescources .modal-content,.facultyLookup, .modal-contentLookup,
+  .studDesc, .studAdvisor, .tutorLabDesc, .studAmbDesc{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 75%;
+    color: black;
+    font-weight: 100;
+  }
+  #close {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+  }
+  
+  #close:hover,
+  #close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .facultyLookup{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #ECECEC;
+    }
+  #facResarchTitle,#facResarchSubTitle,#facLookupTitle,
+  #facLookupSubTitle,#studentRescTitle,#studentRescSubTitle{
+      width: 100%;
+      text-align: center;
+  }
+  .facultyLookup > div , .studentResources > div{
+    flex: 25%; 
+    text-align: center;
+    font-size: 1.5rem;
+    transition: transform .2s;
+  }
+  .facultyLookup > .modalLookupBox:hover{
+    transform: scale(1.25);  
+  }
+  .studentResources{
+      display: flex;
+      width: 100vw;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      transition: transform .2s;
+  }
+  .studentResources > div {
+    flex: 33%;   
+  }
+#ritFooter{
+    background-color: #000;
+    color:white;
+    height: 10rem;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 5%;
+
+}
+  
